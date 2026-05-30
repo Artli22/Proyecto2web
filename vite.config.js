@@ -13,7 +13,15 @@ const dirname = typeof __dirname !== 'undefined' ? __dirname : path.dirname(file
 export default defineConfig({
   plugins: [react()],
   test: {
+    globals: true,
+    environment: 'jsdom',
     projects: [{
+      name: 'unit',
+      extends: true,
+      test: {
+        include: ['test/**/*.test.js']
+      }
+    }, {
       extends: true,
       plugins: [
       // The plugin will run tests for the stories defined in your Storybook config
