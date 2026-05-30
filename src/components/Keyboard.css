@@ -1,0 +1,10 @@
+.keyboard {
+  display: flex;
+  flex-direction: column;
+  gap: 5px
+}
+
+.keyboard-row {
+  display: flex;
+  gap: 5px
+}
