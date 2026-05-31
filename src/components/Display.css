@@ -1,9 +1,87 @@
 .display {
-  border: 1px solid black;
-  background-color: #f0f0f0;
-  padding: 20px;
-  font-size: 24px;
+  background-color: #c4e4d0;
+  border: 3px solid #242F2B;
+  border-radius: 15px;
+  padding: 30px 20px;
+  min-height: 140px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.display-face {
+  margin-bottom: 10px;
+  height: 60px;
+  width: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.face-eye {
+  width: 12px;
+  height: 12px;
+  background-color: #000;
+  border-radius: 50%;
+  position: absolute;
+  top: 8px;
+}
+
+.face-eye--left {
+  left: 20px;
+}
+
+.face-eye--right {
+  right: 20px;
+}
+
+.face-mouth {
+  position: absolute;
+  bottom: 8px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 30px;
+  height: 2px;
+  background-color: #000;
+  border-radius: 2px;
+}
+
+/* Expresión neutral - línea recta */
+.display-face--neutral .face-mouth {
+  height: 2px;
+  width: 30px;
+}
+
+/* Expresión feliz - sonrisa hacia arriba */
+.display-face--happy .face-mouth {
+  height: 14px;
+  width: 30px;
+  background-color: transparent;
+  border: 2px solid #000;
+  border-top: none;
+  border-radius: 0 0 15px 15px;
+}
+
+/* Expresión triste - sonrisa hacia abajo */
+.display-face--sad .face-mouth {
+  height: 14px;
+  width: 30px;
+  background-color: transparent;
+  border: 2px solid #000;
+  border-bottom: none;
+  border-radius: 15px 15px 0 0;
+  transform: scaleY(-1);
+}
+
+.display-result {
+  font-size: 28px;
+  font-weight: bold;
   text-align: right;
-  min-height: 40px;
-  margin-bottom: 10px
+  width: 100%;
+  color: #333;
+  min-height: 30px;
 }
