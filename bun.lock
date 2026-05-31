@@ -6,7 +6,7 @@
       "name": "calculator",
       "dependencies": {
         "react": "^19.2.6",
-        "react-dom": "^19.2.6",
+        "react-dom": "^19.2.6"
       },
       "devDependencies": {
         "@chromatic-com/storybook": "^5.2.1",
@@ -35,9 +35,9 @@
         "standard": "^17.1.2",
         "storybook": "^10.4.1",
         "vite": "^8.0.12",
-        "vitest": "^4.1.7",
-      },
-    },
+        "vitest": "^4.1.7"
+      }
+    }
   },
   "packages": {
     "@adobe/css-tools": ["@adobe/css-tools@4.5.0", "", {}, "sha512-6OzddxPio9UiWTCemp4N8cYLV2ZN1ncRnV1cVGtve7dhPOtRkleRyx32GQCYSwDYgaHU3USMm84tNsvKzRCa1Q=="],

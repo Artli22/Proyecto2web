@@ -1,15 +1,5 @@
 export function Display({ valor }) {
-  const getExpression = () => {
-    if (valor.includes('Error') || valor.includes('Infinity')) {
-      return 'sad'
-    }
-    if (valor === '0') {
-      return 'neutral'
-    }
-    return 'happy'
-  }
-
-  const expression = getExpression()
+  const expression = valor === 'ERROR' || valor.includes('Infinity') ? 'sad' : valor === '0' ? 'neutral' : 'happy'
 
   return (
     <div className="display">

@@ -10,7 +10,7 @@ export default {
 }
 
 export function KeyboardDefault() {
-  return <Keyboard alClickearBoton={(boton) => {}} />
+  return <Keyboard alClickearBoton={() => {}} />
 }
 
 export function KeyboardInteractiva() {

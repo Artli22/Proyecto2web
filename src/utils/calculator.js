@@ -12,6 +12,9 @@ export const esMuyGrande = (numero) => {
 }
 
 export const configResultado = (numero) => {
+  if (isNaN(numero) || !isFinite(numero)) {
+    return 'ERROR'
+  }
   if (esNegativo(numero)) {
     return 'ERROR'
   }
@@ -36,6 +39,9 @@ export const calcular = (operadorIzq, operation, operadorDer) => {
       break
     case '*':
       resultado = num1 * num2
+      break
+    case '%':
+      resultado = num1 % num2
       break
     case '=':
       resultado = num2
